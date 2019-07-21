@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MVP books</string>
+    <string name="frgpass">
+        <u>Forgot password</u>
+    </string>
+    <string name="sgnup">
+        <u>Sign up</u>
+    </string>
+    <string name="sgnin">
+        <u>Sign in</u>
+    </string>
+</resources>

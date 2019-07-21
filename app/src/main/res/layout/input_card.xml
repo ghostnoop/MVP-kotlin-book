@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:elevation="0dp"
+        android:background="@drawable/transparly"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:text="Welcome\nback"
+            android:textColor="@color/colorPrimary"
+            android:textSize="35sp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/sans"
+            android:layout_height="wrap_content"
+            android:id="@+id/screen_text"/>
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:elevation="0dp"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:layout_height="match_parent">
+        <ImageButton
+                android:layout_width="90dp"
+                android:elevation="5dp"
+                android:layout_height="90dp"
+                android:outlineProvider="none"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/ic_circleshape"
+                app:srcCompat="@drawable/ic_back"
+                android:layout_alignParentRight="true"
+                android:id="@+id/sign_btn"/>
+
+        <ImageButton
+                android:id="@+id/eye_image"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="230dp"
+                android:elevation="5dp"
+                android:background="@drawable/transparly"
+                android:src="@drawable/ic_eye"
+                android:layout_marginRight="45dp"
+                android:layout_height="wrap_content"/>
+
+
+        <androidx.cardview.widget.CardView
+                android:elevation="0dp"
+                android:layout_marginTop="70dp"
+                android:layout_width="match_parent"
+                app:cardCornerRadius="50dp"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:orientation="vertical"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_height="match_parent">
+
+
+                <TextView
+                        android:text="Please Sign In"
+                        android:layout_width="wrap_content"
+                        android:textColor="#330000"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/sans"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:id="@+id/Sign_text"/>
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="name"
+                        android:fontFamily="@font/sans"
+                        android:textColor="#330000"
+                        android:text=""
+                        android:ems="10"
+                        android:id="@+id/name_text" android:visibility="gone"/>
+
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#330000"
+                        android:fontFamily="@font/sans"
+                        android:hint="email"
+                        android:text=""
+                        android:ems="10"
+                        android:id="@+id/email_text" />
+
+                <EditText
+                        android:layout_width="match_parent"
+                        android:textColor="#330000"
+                        android:fontFamily="@font/sans"
+                        android:textColorHighlight="#ffcfa3"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:hint="password"
+                        android:ems="10"
+                        android:id="@+id/password_text"/>
+                <EditText
+                        android:layout_width="match_parent"
+                        android:textColor="#330000"
+                        android:fontFamily="@font/sans"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:textColorHighlight="#ffcfa3"
+                        android:hint="repeat password"
+                        android:ems="10"
+                        android:id="@+id/repeatpass_text" android:visibility="gone"/>
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="40dp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:text="@string/frgpass"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/sans"
+                            android:layout_width="wrap_content"
+                            android:textSize="20sp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="160dp"
+                            android:layout_marginBottom="50dp"
+                            android:textColor="#ffcfa3"
+                            android:id="@+id/forgotpass"/>
+                    <TextView
+                            android:text="@string/sgnup"
+                            android:textAllCaps="false"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/sans"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffcfa3"
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/signup"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</LinearLayout>
